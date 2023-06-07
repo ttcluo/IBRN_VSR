@@ -1,0 +1,44 @@
+name: PDFAR_Vid4_Sharp_BI_x4_Y
+test_root: exp_test/
+model_type: BasicVSRModel
+scale: 4
+num_gpu: 1  # set num_gpu: 0 for cpu mode
+manual_seed: 10
+
+datasets:
+  test:
+    name: Vid4
+    type: VidTestDataset
+    dataroot_gt: /media/disk/silence/data/vid4/HR    #val_sharp
+    dataroot_lq: /media/disk/silence/data/vid4/LR    #val_sharp_bicubic/X4
+    io_backend:
+      type: disk
+
+# network structures
+network_g:
+  type: BasicVSR_V4
+  num_feat: 64
+  extract_block: 12
+  num_block: 30
+  resType: ResidualBlock_CA
+  use_deblur: true
+
+# path
+path:
+  pretrain_network_g: models/net_g_vid4.pth
+  strict_load_g: true
+
+# validation settings
+val:
+  save_img: true
+  suffix: ~  # add suffix to saved images, if None, use exp name
+
+  metrics:
+    psnr: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 0
+      test_y_channel: true
+    ssim: # metric name, can be arbitrary
+      type: calculate_ssim
+      crop_border: 0
+      test_y_channel: true
