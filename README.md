@@ -71,12 +71,12 @@ R-DGAE, MAGCN and GMM-VGAE.
 ### Calendar 
 
 <p align="center">
-  <img width="960" height="190" src="figs/calendar.png"/>
+  <img width="680" height="190" src="figs/calendar.png"/>
 </p>
 
 ### Foliage
 <p align="center">
-  <img width="960" height="190" src="figs/foliage.png"/>
+  <img width="680" height="190" src="figs/foliage.png"/>
 </p>
 
 
