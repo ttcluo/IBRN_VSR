@@ -71,28 +71,28 @@ R-DGAE, MAGCN and GMM-VGAE.
 ### Calendar 
 
 <p align="center">
-  <img width="680" height="190" src="figs/calendar.png"/>
+  <img width="960" height="290" src="figs/calendar.png"/>
 </p>
 
 ### Foliage
 <p align="center">
-  <img width="680" height="190" src="figs/foliage.png"/>
+  <img width="960" height="290" src="figs/foliage.png"/>
 </p>
 
 
 ## REDS
 ### Clip 000 
 <p align="center">
-  <img width="960" height="190" src="figs/reds_000.png"/>
+  <img width="960" height="290" src="figs/reds_000.png"/>
 </p>
 
 ### Clip 015
 <p align="center">
-  <img width="960" height="190" src="figs/reds_015.png"/>
+  <img width="960" height="290" src="figs/reds_015.png"/>
 </p>
 
 # Temporal Consistent
 <p align="center">
-  <img width="960" height="190" src="figs/tc.png"/>
+  <img width="960" height="290" src="figs/tc.png"/>
 </p>
 
